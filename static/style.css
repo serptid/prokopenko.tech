@@ -13,7 +13,7 @@ body {
 
 /* Консольный блок */
 .console {
-    white-space: pre;
+    white-space: pre-wrap; /* Разрешаем перенос строк */
     font-size: 16px;
     padding: 20px;
     border: 2px solid rgb(0, 255, 0); /* Рамка */
@@ -22,6 +22,10 @@ body {
     width: 80%; /* Ширина блока */
     max-width: 600px; /* Максимальная ширина */
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Тень для эффекта */
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Перенос длинных слов для совместимости */
+    overflow: hidden; /* Скрываем всё, что выходит за границы */
+    text-align: left; /* Выравниваем текст по левому краю */
 }
 
 /* Ссылки меню */

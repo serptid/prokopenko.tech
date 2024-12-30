@@ -8,23 +8,24 @@ const outputArea = document.getElementById("output-area");
 const outputBottom = document.getElementById("bottom-output");
 
 // Текст, который выводится первым
-const introText = "Добро пожаловать на мой сайт.\nМеня зовут\n  ";
+const introText = "Добро пожаловать на мой первый сайт.\n\nМеня зовут Прокопенко Сергей Игоревич. Я студент Дальневосточного Федерального Университета.";
+
 
 // Пункты меню
 const menuItems = [
-    { text: "1. Мой VK", link: "https://vk.com/oo0010090"},
-    { text: "2. Мой Telegram", link: "https://t.me/ProkopenkoSR"},
-    { text: "3. Мой GitHub", link: "https://github.com/serptid"},
-    { text: "4. Мой Discord", link: "https://discord.com/users/sery0zha"},
-    { text: "5. Мой Steam", link: "https://steamcommunity.com/id/SERP_TID"},
-    { text: "6. Мой Spotify", link: "https://open.spotify.com/user/31xappvpl5vfcxp5mw6oslo4zpha?si=47467846e8cc4f60"}
+    { text: "1.VK", link: "https://vk.com/oo0010090"},
+    { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},
+    { text: "3.GitHub", link: "https://github.com/serptid"},
+    { text: "4.Discord", link: "https://discord.com/users/sery0zha"},
+    { text: "5.Steam", link: "https://steamcommunity.com/id/SERP_TID"},
+    { text: "6.Spotify", link: "https://open.spotify.com/user/31xappvpl5vfcxp5mw6oslo4zpha?si=47467846e8cc4f60"}
 ];
 
 // Текст, который выводится после меню
 const bottomText = "\nЭто текст, который выводится после меню.";
 
 // Функция для побуквенного вывода текста
-function typeText(text, element, callback, speed = 50) {
+function typeText(text, element, callback, speed = 10) {
     let i = 0;
     const interval = setInterval(() => {
         if (i < text.length) {

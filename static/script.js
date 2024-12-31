@@ -16,7 +16,7 @@ const menuItems = [
     { text: "1.VK", link: "https://vk.com/oo0010090"},
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},
     { text: "3.GitHub", link: "https://github.com/serptid"},
-    { text: "4.Discord", link: "https://discord.com/users/sery0zha"},
+    { text: "4.Discord", link: "https://discord.com/users/533201254143229962"},
     { text: "5.Steam", link: "https://steamcommunity.com/id/SERP_TID"},
     { text: "6.Spotify", link: "https://open.spotify.com/user/31xappvpl5vfcxp5mw6oslo4zpha?si=47467846e8cc4f60"}
 ];

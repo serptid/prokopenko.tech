@@ -10,10 +10,12 @@ const outputBottom = document.getElementById("bottom-output");
 // Текст, который выводится первым
 const introText = "Добро пожаловать на мой первый сайт.\n\nМеня зовут Прокопенко Сергей Игоревич. Я студент Дальневосточного Федерального Университета.";
 
+// Текст, который выводится после меню
+const bottomText = "Все права защищены© ";
 
 // Пункты меню
 const menuItems = [
-    { text: "1.VK", link: "https://vk.com/oo0010090"},
+    { text: "1.VK", link: "https://vk.com/oo0010090", icon: "https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg"},
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},
     { text: "3.GitHub", link: "https://github.com/serptid"},
     { text: "4.Discord", link: "https://discord.com/users/533201254143229962"},
@@ -21,8 +23,6 @@ const menuItems = [
     { text: "6.Spotify", link: "https://open.spotify.com/user/31xappvpl5vfcxp5mw6oslo4zpha?si=47467846e8cc4f60"}
 ];
 
-// Текст, который выводится после меню
-const bottomText = "\nЭто текст, который выводится после меню.";
 
 // Функция для побуквенного вывода текста
 function typeText(text, element, callback, speed = 10) {

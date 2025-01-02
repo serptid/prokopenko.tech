@@ -14,9 +14,13 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <!-- Иконка-файлик -->
+    <div class="file-icon-container">
+        <div class="file-icon"></div>
+    </div>
+
     <!-- Блок аутентификации и регистрации -->
     <div class="auth-container">
-        <!-- Форма входа -->
         <h2>Вход</h2>
         <form id="auth-form">
             <label for="username">Логин:</label>
@@ -26,8 +30,6 @@
             <button type="submit">Войти</button>
         </form>
         <div id="auth-error" class="error-message"></div>
-
-        <!-- Форма регистрации -->
         <h2>Регистрация</h2>
         <form id="register-form">
             <label for="reg-username">Логин:</label>
@@ -47,7 +49,6 @@
         <div id="next_1"></div>
     </div>
 
-    <!-- Скрипты -->
     <script type="module" src="/static/script.js"></script>
 </body>
 </html>

@@ -110,3 +110,13 @@ const auth = new AuthSystem({
         WriteLoggedIn.typeText(loggedInText);
     },
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fileIconContainer = document.querySelector(".file-icon-container");
+    const authContainer = document.querySelector(".auth-container");
+
+    // Переключение видимости блока аутентификации
+    fileIconContainer.addEventListener("click", () => {
+        authContainer.classList.toggle("active");
+    });
+});

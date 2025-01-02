@@ -56,3 +56,61 @@ body {
         color: rgb(0, 255, 0);
     }
 }
+
+/* Контейнер авторизации */
+.auth-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    color: rgb(0, 255, 0);
+    font-family: "Anonymous Pro", monospace;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+/* Стили заголовка формы */
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+.auth-container input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+
+/* Кнопка отправки */
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: white;
+}
+
+/* Ошибки */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}

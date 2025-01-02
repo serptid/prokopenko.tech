@@ -14,11 +14,27 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <!-- Блок аутентификации -->
+    <div class="auth-container">
+        <h2>Вход</h2>
+        <form id="auth-form">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" placeholder="Введите логин" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" placeholder="Введите пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+        <div id="auth-error" class="error-message"></div>
+    </div>
+
+    <!-- Консоль -->
     <div class="console">
         <div id="first"></div>
         <div id="menu"></div>
         <div id="next_1"></div>
     </div>
-    <script src="/static/script.js"></script>
+
+    <!-- Скрипты -->
+    <script type="module" src="/static/script.js"></script>
 </body>
 </html>

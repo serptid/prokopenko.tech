@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <!-- Блок аутентификации -->
+    <!-- Блок аутентификации и регистрации -->
     <div class="auth-container">
+        <!-- Форма входа -->
         <h2>Вход</h2>
         <form id="auth-form">
             <label for="username">Логин:</label>
@@ -25,6 +26,18 @@
             <button type="submit">Войти</button>
         </form>
         <div id="auth-error" class="error-message"></div>
+
+        <!-- Форма регистрации -->
+        <h2>Регистрация</h2>
+        <form id="register-form">
+            <label for="reg-username">Логин:</label>
+            <input type="text" id="reg-username" placeholder="Введите логин" required>
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password" placeholder="Введите пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div id="reg-success" class="success-message"></div>
+        <div id="reg-error" class="error-message"></div>
     </div>
 
     <!-- Консоль -->

@@ -11,7 +11,7 @@ body {
     min-height: 100vh; /* Высота экрана */
 }
 
-/* Консольный блок */
+/* Универсальный консольный блок */
 .console {
     white-space: pre-wrap; /* Разрешаем перенос строк */
     font-size: 16px;
@@ -26,6 +26,7 @@ body {
     overflow-wrap: break-word; /* Перенос длинных слов для совместимости */
     overflow: hidden; /* Скрываем всё, что выходит за границы */
     text-align: left; /* Выравниваем текст по левому краю */
+    margin-bottom: 20px; /* Расстояние между консольными блоками */
 }
 
 /* Ссылки меню */
@@ -110,6 +111,14 @@ body {
 /* Ошибки */
 .error-message {
     color: red;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+/* Сообщение об успешной регистрации */
+.success-message {
+    color: green;
     font-size: 14px;
     text-align: center;
     display: none;

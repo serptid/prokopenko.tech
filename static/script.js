@@ -68,13 +68,6 @@ class MenuRenderer {
 }
 
 
-// Тексты
-const introTexts = [
-    "Добро пожаловать на мой первый сайт.\n",
-    "Меня зовут Прокопенко Сергей Игоревич. Я студент Дальневосточного Федерального Университета."
-];
-const bottomTexts = ["Все права защищены©"];
-// Меню
 const menuItems = [
     { text: "1.VK", link: "https://vk.com/oo0010090" },
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR" },
@@ -93,23 +86,4 @@ const bottom_menu = [
 
 // Элементы DOM
 const first = document.getElementById("first");
-const menu_1 = document.getElementById("menu_1");
-const second = document.getElementById("second");
-const menu_2 = document.getElementById("menu_2");
 
-// Экземпляры классов
-const IntroWriter = new TextWriter(first, introTexts, 20);
-const Menu1Renderer = new MenuRenderer(menu_1, menuItems, 20);
-const BottomWriter = new TextWriter(second, bottomTexts, 20);
-const Menu2Renderer = new MenuRenderer(menu_2, bottom_menu, 20);
-
-// Асинхронный порядок выполнения
-async function execute() {
-    await IntroWriter.renderTexts();     // Вывод introTexts в first
-    await Menu1Renderer.renderMenu();   // Вывод menuItems в menu_1
-    await BottomWriter.renderTexts();   // Вывод bottomTexts в second
-    await Menu2Renderer.renderMenu();   // Вывод bottom_menu в menu_2
-    console.log("Все блоки текста и меню завершены.");
-}
-
-execute();

@@ -28,7 +28,6 @@ class MenuRenderer {
     typeMenuItem(menuItem, callback) {
         let i = 0;
 
-        // Создаём элемент ссылки
         const menuLink = document.createElement("a");
         menuLink.href = menuItem.link;
         menuLink.target = "_blank";

@@ -5,44 +5,52 @@ body {
     font-family: "Anonymous Pro", monospace;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;    /* по горизонтали */
+    align-items: center;        /* по вертикали */
 }
 
-/* Консольный блок */
+/* Консольный блок по центру */
 .console {
-    white-space: pre-wrap;
     font-size: 16px;
     padding: 20px;
     border: 2px solid rgb(0, 255, 0);
     border-radius: 10px;
     background-color: #0a0a0a;
-    width: 80%;
+    width: 10%;
     max-width: 600px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    overflow: hidden;
     text-align: left;
 }
 
-/* Ссылки меню */
+/* Меню */
+#menu {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Ссылки меню — текст по центру */
 .menu-item {
     color: rgb(0, 255, 0);
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s;
+    font-size: 18px;
     display: block;
-    margin: 5px 0;
+    width: 100%;
+    text-align: left; /* <-- выравнивание по левому краю */
 }
+
 
 .menu-item:hover {
     color: white;
 }
 
-/* Анимация каретки */
+/* Анимация каретки (если нужно) */
 .caret {
     animation: blink 1s step-end infinite;
     margin-left: 2px;

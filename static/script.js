@@ -1,23 +1,3 @@
-class TextWriter {
-    constructor(element, speed = 50) {
-        this.element = element;
-        this.speed = speed;
-    }
-
-    typeText(text, callback) {
-        let i = 0;
-        const interval = setInterval(() => {
-            if (i < text.length) {
-                this.element.textContent += text[i];
-                i++;
-            } else {
-                clearInterval(interval);
-                if (callback) callback();
-            }
-        }, this.speed);
-    }
-}
-
 class MenuRenderer {
     constructor(outputArea, menuItems, speed = 50) {
         this.outputArea = outputArea;
@@ -32,7 +12,6 @@ class MenuRenderer {
         menuLink.href = menuItem.link;
         menuLink.target = "_blank";
         menuLink.className = "menu-item";
-
         this.outputArea.appendChild(menuLink);
 
         const interval = setInterval(() => {
@@ -58,9 +37,7 @@ class MenuRenderer {
     }
 }
 
-// Использование классов
-const introText = "Добро пожаловать на мой первый сайт.\n\nМеня зовут Прокопенко Сергей Игоревич.";
-const bottomText = " ";
+// Данные меню
 const menuItems = [
     { text: "1.VK", link: "https://vk.com/oo0010090"},
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},
@@ -70,16 +47,6 @@ const menuItems = [
     { text: "6.Spotify", link: "https://open.spotify.com/user/31xappvpl5vfcxp5mw6oslo4zpha?si=47467846e8cc4f60"}
 ];
 
-const first = document.getElementById("first");
 const menu = document.getElementById("menu");
-const next_1 = document.getElementById("next_1");
-
-const Write = new TextWriter(first, 20);
 const WriteMenu = new MenuRenderer(menu, menuItems, 50);
-
-Write.typeText(introText, () => {
-    WriteMenu.renderMenu(() => {
-        const WriteBottom = new TextWriter(next_1, 10);
-        WriteBottom.typeText(bottomText);
-    });
-});
+WriteMenu.renderMenu();

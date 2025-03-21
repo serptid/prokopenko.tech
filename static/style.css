@@ -1,0 +1,58 @@
+/* Базовые стили */
+body {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    font-family: "Anonymous Pro", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Консольный блок */
+.console {
+    white-space: pre-wrap;
+    font-size: 16px;
+    padding: 20px;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Ссылки меню */
+.menu-item {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: block;
+    margin: 5px 0;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+/* Анимация каретки */
+.caret {
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: rgb(0, 255, 0);
+    }
+}

@@ -59,8 +59,8 @@ class MenuRenderer {
 }
 
 // Использование классов
-const introText = "Добро пожаловать на мой первый сайт.\n\nМеня зовут Прокопенко Сергей Игоревич. Я студент Дальневосточного Федерального Университета.";
-const bottomText = "Все права защищены© ";
+const introText = "Добро пожаловать на мой первый сайт.\n\nМеня зовут Прокопенко Сергей Игоревич.";
+const bottomText = " ";
 const menuItems = [
     { text: "1.VK", link: "https://vk.com/oo0010090"},
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},

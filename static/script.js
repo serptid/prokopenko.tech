@@ -39,7 +39,7 @@ class MenuRenderer {
 
 // Данные меню
 const menuItems = [
-    { text: "1.VK", link: "https://vk.com/oo0010090"},
+    { text: "1.VK", link: "https://vk.cc/cjPYD6"},
     { text: "2.Telegram", link: "https://t.me/ProkopenkoSR"},
     { text: "3.GitHub", link: "https://github.com/serptid"},
     { text: "4.Discord", link: "https://discord.com/users/533201254143229962"},
